@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura IoT</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="site-title">Programación para IoT <span>· Internet de las Cosas</span></div>
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="nav-tab" href="index.html">Inicio</a>
+            <a class="nav-tab active" href="arquitectura.html" aria-current="page">Arquitectura</a>
+            <a class="nav-tab" href="desarrollo.html">Hardware &amp; Software</a>
+            <a class="nav-tab" href="aplicaciones.html">Aplicaciones</a>
+            <a class="nav-tab" href="creador.html">Creador</a>
+        </nav>
+    </header>
+    <main>
+    <h2><strong>Arquitectura de un sistema IoT</strong></h2>
+    <p>Para comprender cómo opera el IoT a nivel de desarrollo de software y hardware, se divide comúnmente en una estructura de 4 capas fundamentales:</p>
+    <ol>
+        <li><strong>Capa 1: Dispositivos (Sensores y Actuadores)</strong></li>
+        <center><img src="IMG/imagen2.jpg" width="200" height="150"></center>
+         <ul style="list-style-type: disc;" >
+            <li><strong>Sensores: </strong> Dispositivos físicos que capturan magnitudes del entorno (temperatura, humedad, luz, presencia, aceleración, ritmo cardíaco).</li>
+            <li><strong>Actuadores: </strong> Componentes que transforman señales eléctricas en acciones físicas (motores, relés, electroválvulas, pantallas LCD, zumbadores).</li>
+         </ul>
+        <br>
+        <li><strong>Capa 2: Conectividad y Redes (Edge / Gateway)</strong></li>
+         <ul style="list-style: disc;">
+            <li>Es el medio por el cual los datos capturados viajan de forma digital. Utiliza protocolos inalámbricos de corto y largo alcance (Wi-Fi, Bluetooth, Zigbee, LoRaWAN, redes celulares 4G/5G).</li>
+         </ul> 
+        <br>
+        <li><strong>Capa 3: Procesamiento en la Nube (Cloud Computing) o Borde (Edge Computing)</strong></li> 
+         <ul style="list-style: disc;">
+            <li>Los datos masivos (Big Data) llegan a servidores centralizados o plataformas de procesamiento en la nube (como AWS IoT, Google Cloud IoT o servidores MQTT propios) donde se almacenan y analizan mediante algoritmos o Inteligencia Artificial.</li>
+         </ul>
+        <br>
+        <li><strong>Capa 4: Interfaz de Usuario / Aplicación (Dashboard)</strong></li>
+         <ul style="list-style: disc;">
+             <li>Paneles visuales accesibles desde ordenadores o aplicaciones móviles que permiten al usuario final monitorear el estado del sistema en tiempo real y enviar comandos de control a los dispositivos remotos.</li>
+         </ul>
+    </ol>
+    </main>
+
+    <footer>
+        <div class="footer-creador">
+            <img src="IMG/1785285442828.jpg" alt="Foto de Adrian De La Cruz, creador del sitio" width="56" height="56">
+            <p><strong>Adrian De La Cruz</strong><br>Estudiante de Licenciatura en Desarrollo y Gestión de Software · UTP</p>
+            <a href="creador.html">Conocer al creador</a>
+        </div>
+        <p class="footer-copy">© 2026 Programación para IoT · Universidad Tecnológica de Panamá · Desarrollo de Software V</p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
