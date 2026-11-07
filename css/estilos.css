@@ -1,0 +1,194 @@
+
+:root {
+    --primary-color: #94694a;
+    --primary-dark: #6f4a2f;
+    --bg-color: #faf6f2;
+    --text-color: #3b2a1e;
+    --card-bg: #ffffff;
+    --border-color: #eadccf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado y Barra de Navegación Moderna */
+header {
+    background-color: var(--card-bg);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.nav-tab {
+    text-decoration: none;
+    color: #7a6657;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-tab:hover {
+    color: var(--primary-color);
+    background-color: #f6ece3;
+}
+
+.nav-tab.active {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+/* Contenido Principal */
+main {
+    flex: 1;
+    max-width: 900px;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-dark);
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+p, ul {
+    margin-bottom: 1.2rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Moderno */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #3b2a1e;
+    color: #d8c6b6;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* ===== Header: título del sitio ===== */
+.site-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-dark);
+    padding: 0.8rem 1rem 0;
+}
+
+.site-title span {
+    font-weight: 400;
+    color: #7a6657;
+}
+
+/* ===== Footer: reseña breve del creador ===== */
+.footer-creador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 1rem;
+}
+
+.footer-creador img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #8b6b52;
+}
+
+.footer-creador p {
+    margin: 0;
+    color: #eadccf;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.footer-creador a {
+    color: #e8c9a8;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-creador a:hover {
+    border-bottom-color: #e8c9a8;
+}
+
+footer .footer-copy {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 600px) {
+    main {
+        padding: 1.2rem;
+        margin: 1rem auto;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .nav-tab {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .footer-creador {
+        flex-direction: column;
+    }
+
+    .footer-creador p {
+        text-align: center;
+    }
+}
