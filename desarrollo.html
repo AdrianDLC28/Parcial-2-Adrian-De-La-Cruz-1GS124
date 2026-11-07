@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware y Software - IoT</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="site-title">Programación para IoT <span>· Internet de las Cosas</span></div>
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="nav-tab" href="index.html">Inicio</a>
+            <a class="nav-tab" href="arquitectura.html">Arquitectura</a>
+            <a class="nav-tab active" href="desarrollo.html" aria-current="page">Hardware &amp; Software</a>
+            <a class="nav-tab" href="aplicaciones.html">Aplicaciones</a>
+            <a class="nav-tab" href="creador.html">Creador</a>
+        </nav>
+    </header>
+    <main>
+    <h2><strong>Hardware y Tecnologías de Desarrollo</strong></h2>
+    <p>El desarrollo en IoT se sustenta en una amplia gama de plataformas de hardware adaptadas a diferentes escalas de proyectos:</p>
+    <ul style="list-style: disc;">
+      <li><strong>Microcontroladores de Bajo Costo (para nodos sensores):</strong></li>
+        <ul style="list-style: disc;">
+           <li><strong>ESP32 / ESP8266: </strong>Placas muy populares que integran conectividad Wi-Fi y Bluetooth de fábrica, ideales para proyectos conectados de bajo costo.</li>
+           <li><strong>Arduino (Uno, Nano, Mega):</strong> Plataformas de código abierto excelentes para el aprendizaje inicial de lectura analógica/digital y control básico de pines (GPIO).</li>
+           <center><img src="IMG/Arduino_Uno_-_R3.jpg" height="200" width="200"><img src="IMG/esp32.jpg" height="200" width="200"></center>
+        </ul>
+      <br>
+      <li><strong>Computadoras de Placa Reducida (SBC):</strong></li>
+        <ul style="list-style: disc;">
+           <li><strong>Raspberry Pi: </strong>Funcionan como miniordenadores capaces de correr sistemas operativos basados en Linux. Se utilizan en proyectos IoT avanzados que requieren procesamiento local (Edge Computing), bases de datos locales o servidores web integrados.</li>
+           <center><img src="IMG/1914-05.jpg" height="200" width="200"></center>
+        </ul>
+    </ul>
+    <h2><strong>Lenguajes de Programación y Protocolos de Comunicación</strong></h2>
+    <h3>Lenguajes Principales:</h3>
+    <ul style="list-style: disc;">
+      <li><strong>C y C++: </strong>Son los lenguajes estándar de la industria para microcontroladores (como Arduino y ESP32). Ofrecen un control absoluto sobre los recursos de hardware y una velocidad de ejecución sumamente eficiente.</li>
+      <li><strong>Python:</strong> Muy utilizado en pasarelas y placas como Raspberry Pi gracias a su sintaxis intuitiva, facilidad de integración y librerías avanzadas para análisis de datos e inteligencia artificial.</li>
+      <li><strong>JavaScript (Node.js): </strong> Empleado frecuentemente en el desarrollo de servidores web de tiempo real y paneles de control basados en WebSockets.</li>
+    </ul>
+    <h2>Protocolos de Comunicación Clave:</h2>
+    <ul style="list-style: disc;">
+      <li><strong>Ciberseguridad:</strong>Al haber millones de dispositivos interconectados, la superficie de ataque aumenta considerablemente, haciendo vital la encriptación de datos y la gestión segura de credenciales.</li>
+      <li><strong>Interoperabilidad:</strong> La enorme variedad de fabricantes y estándares dificulta a veces que dispositivos de diferentes marcas se comuniquen entre sí de forma fluida.</li>
+    </ul>
+    </main>
+
+    <footer>
+        <div class="footer-creador">
+            <img src="IMG/1785285442828.jpg" alt="Foto de Adrian De La Cruz, creador del sitio" width="56" height="56">
+            <p><strong>Adrian De La Cruz</strong><br>Estudiante de Licenciatura en Desarrollo y Gestión de Software · UTP</p>
+            <a href="creador.html">Conocer al creador</a>
+        </div>
+        <p class="footer-copy">© 2026 Programación para IoT · Universidad Tecnológica de Panamá · Desarrollo de Software V</p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
